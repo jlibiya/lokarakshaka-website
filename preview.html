@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lokarakshaka Hospital</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--p:#6a2c91;--pd:#47195f;--pl:#f4ecfa;--t:#2b2233;--m:#6f6578}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',Arial,sans-serif;color:var(--t);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+section{padding:64px 0}.alt{background:var(--pl)}
+h1,h2,h3{line-height:1.25}
+h2{font-size:2rem;color:var(--pd);margin-bottom:8px}
+.sub{color:var(--m);max-width:680px;margin-bottom:32px}
+.center{text-align:center}.center .sub{margin-inline:auto}
+header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 12px rgba(106,44,145,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-weight:700;font-size:1.35rem;color:var(--p)}.logo span{color:var(--t)}
+nav a{margin-left:22px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:var(--p);border-color:var(--p)}
+.burger{display:none;background:none;border:0;font-size:1.8rem;color:var(--p);cursor:pointer}
+.btn{display:inline-block;background:var(--p);color:#fff;padding:11px 24px;border-radius:30px;font-weight:600;border:2px solid var(--p);cursor:pointer;font-size:.95rem;transition:.2s}
+.btn:hover{background:var(--pd);border-color:var(--pd);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--p)}.btn.o:hover{background:var(--p);color:#fff}
+.btn.w{background:#fff;color:var(--pd);border-color:#fff}
+.hero{background:linear-gradient(135deg,#6a2c91,#9b59c4);color:#fff;padding:90px 0}
+.hero h1{font-size:2.9rem;margin-bottom:14px;max-width:700px}
+.hero p{max-width:600px;margin-bottom:26px;opacity:.95}
+.hero .btn.o{color:#fff;border-color:#fff}.hero .btn.o:hover{background:#fff;color:var(--pd)}
+.page-hero{background:linear-gradient(135deg,#6a2c91,#9b59c4);color:#fff;padding:54px 0}
+.page-hero h1{font-size:2.3rem}.page-hero p{max-width:700px;opacity:.95}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 4px 18px rgba(106,44,145,.1);border-top:4px solid var(--p);transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 26px rgba(106,44,145,.2)}
+.card h3{color:var(--pd);margin-bottom:8px;font-size:1.1rem}.card p{color:var(--m);font-size:.93rem}
+.ico{font-size:2rem;margin-bottom:8px}
+.stats{background:var(--pd);color:#fff;padding:36px 0}
+.stats .grid{text-align:center}.stats b{display:block;font-size:2.1rem}
+.date{display:inline-block;background:var(--pl);color:var(--pd);font-size:.8rem;font-weight:600;padding:3px 12px;border-radius:20px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.chips span{background:var(--pl);color:var(--pd);font-size:.82rem;padding:4px 12px;border-radius:20px}
+.dept{background:#fff;border-radius:16px;padding:30px;margin-bottom:22px;box-shadow:0 4px 18px rgba(106,44,145,.1);border-left:6px solid var(--p);scroll-margin-top:90px}
+.dept h3{color:var(--pd);font-size:1.4rem}.dept h4{margin-top:14px;font-size:.9rem;color:var(--m)}
+.dept .btn{margin:0 8px 8px 0;padding:8px 20px}
+.doc{text-align:center;display:block}
+.av{width:110px;height:110px;border-radius:50%;margin:0 auto 14px;background:linear-gradient(135deg,#6a2c91,#b57edc);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:700;border:4px solid var(--pl)}
+.av.big{width:180px;height:180px;font-size:4.5rem}
+.doc small{display:block;color:var(--m)}.doc .tag{color:var(--p);font-weight:600;font-size:.85rem;margin-top:6px}
+.dh{margin:40px 0 16px;color:var(--pd);border-bottom:2px solid var(--pl);padding-bottom:6px;scroll-margin-top:90px}
+.two{display:grid;gap:36px;grid-template-columns:1fr 1fr;align-items:start}
+.list p{padding:10px 0;border-bottom:1px solid var(--pl)}.list b{color:var(--pd);display:block}
+iframe{width:100%;height:340px;border:0;border-radius:16px}
+.emg{background:var(--p);color:#fff;border-radius:16px;padding:22px 26px;margin-bottom:22px}
+.emg h3{font-size:1.2rem}
+form{display:grid;gap:14px}
+input,textarea{width:100%;padding:12px 14px;border:1.5px solid #d9c3ea;border-radius:10px;font:inherit}
+input:focus,textarea:focus{outline:0;border-color:var(--p)}
+.cta{background:linear-gradient(135deg,#6a2c91,#9b59c4);color:#fff;text-align:center}
+.cta h2{color:#fff}.cta .sub{color:#fff;margin-inline:auto}
+footer{background:#2b2233;color:#d9c6e8;padding:46px 0 0}
+footer h4{color:#fff;margin-bottom:10px}footer a{display:block;padding:2px 0;opacity:.85}footer a:hover{opacity:1;color:#b57edc}
+.copy{border-top:1px solid #6b3a8a;margin-top:30px;padding:16px 0;text-align:center;font-size:.85rem}
+.wa{position:fixed;right:18px;bottom:18px;background:#25d366;color:#fff;border-radius:30px;padding:12px 20px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:60}
+@media(max-width:820px){.burger{display:block}
+nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:12px 20px;box-shadow:0 8px 14px rgba(0,0,0,.1)}
+nav.open{display:block}nav a{display:block;margin:0;padding:10px 0}
+.hero h1{font-size:2.1rem}.two{grid-template-columns:1fr}}
+/* ===== design upgrade ===== */
+h2:after{content:"";display:block;width:56px;height:4px;border-radius:4px;background:linear-gradient(90deg,#6a2c91,#b57edc);margin-top:10px}
+.center h2:after,.cta h2:after{margin-inline:auto}.cta h2:after{background:#fff}
+.hero{position:relative;overflow:hidden;padding:90px 0 130px}
+.hero:before,.page-hero:before{content:"";position:absolute;width:420px;height:420px;right:-100px;top:-120px;border-radius:50%;background:rgba(255,255,255,.13)}
+.hero:after{content:"";position:absolute;width:240px;height:240px;right:240px;bottom:-130px;border-radius:50%;background:rgba(255,255,255,.1)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero small{display:inline-block;background:rgba(255,255,255,.2);padding:5px 16px;border-radius:30px;margin-bottom:16px;font-weight:500}
+.page-hero{position:relative;overflow:hidden}.page-hero .wrap{position:relative;z-index:2}
+.hv{display:grid;gap:16px}
+.gl{background:rgba(255,255,255,.18);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:18px 22px;display:flex;gap:16px;align-items:center}
+.gl i{font-style:normal;font-size:1.8rem;background:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;flex:none}
+.gl b{display:block;font-size:1.1rem}
+.wave{position:absolute;bottom:-1px;left:0;width:100%;height:60px;z-index:2}
+.card{border-top:0;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#6a2c91,#b57edc)}
+.ico,.di{width:60px;height:60px;border-radius:16px;background:var(--pl);display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin-bottom:14px}
+.stats{background:linear-gradient(135deg,#47195f,#6a2c91)}
+#services{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.dept{margin:0;border-left:0;border-top:5px solid var(--p)}
+.av{box-shadow:0 8px 20px rgba(106,44,145,.3)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.page{display:none}.page.show{display:block}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}#services{grid-template-columns:1fr}.hero{padding:60px 0 110px}}
+/* ===== MBH-style layout ===== */
+.top{background:var(--pd);color:#eadcf5;font-size:.85rem;padding:7px 0}.top .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}.top a{color:#fff;font-weight:600}
+.lab{display:inline-block;color:var(--p);font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:.8rem;margin-bottom:6px}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.abv{position:relative;height:380px;border-radius:24px;background:linear-gradient(145deg,#d9b8ee,#9b59c4);display:flex;align-items:center;justify-content:center;font-size:9rem;box-shadow:0 20px 40px rgba(106,44,145,.25)}
+.abv b{position:absolute;right:-14px;bottom:28px;background:#fff;color:var(--pd);border-radius:16px;padding:14px 22px;font-size:1rem;box-shadow:0 8px 24px rgba(0,0,0,.15);text-align:center}.abv b em{display:block;font-size:2rem;font-style:normal;color:var(--p)}
+.fac{background:linear-gradient(135deg,#47195f,#6a2c91);color:#fff;padding:30px 0}
+.fac .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}.fac h3{font-size:1.4rem}.fac span{font-weight:600}.fac span i{font-style:normal;margin-right:8px}
+.svc{display:block}.svc .ico{transition:.2s}.svc:hover .ico{background:var(--p)}
+.cnt{background:linear-gradient(135deg,#47195f,#6a2c91);color:#fff;text-align:center}.cnt h2{color:#fff;max-width:720px;margin:0 auto 30px}.cnt h2:after{margin-inline:auto;background:#fff}
+.cnt .grid{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.cnt b{display:block;font-size:2.6rem}
+.tour{height:280px;border-radius:24px;background:linear-gradient(135deg,#e6d3f2,#b57edc);display:flex;align-items:center;justify-content:center;font-size:4rem;color:#fff;cursor:pointer}
+.apt{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}.apt .card{border-radius:20px}.apt .em{background:linear-gradient(135deg,#47195f,#6a2c91);color:#fff}.apt .em h3,.apt .em p{color:#fff}
+@media(max-width:820px){.ab,.apt{grid-template-columns:1fr}.abv{height:260px;font-size:6rem}}
+</style></head><body><div id="hd"></div><div class="page" id="p-index">
+<div class="hero"><div class="wrap"><div><small>🏥 Lokarakshaka Hospital · NABH Accredited</small><h1>Best Medical And Health Care Center in Kollam</h1><p>Founded with an aim to promote wellness and provide healthcare for all with the best kinds of services, and successfully achieving milestones ever since.</p><a class="btn w" href="#about">Learn More</a> <a class="btn o" href="#contact">Book Appointment</a></div><div class="hv"><div class="gl"><i>🚑</i><div><b>24/7 Emergency</b>085475 55334</div></div><div class="gl"><i>👨‍⚕️</i><div><b>50+ Specialist Doctors</b>14 departments</div></div><div class="gl"><i>🩺</i><div><b>OPD Mon – Sat</b>9:00 AM – 6:00 PM</div></div></div></div><svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fff" d="M0,30 C360,70 1080,-10 1440,30 L1440,60 L0,60Z"/></svg></div>
+<section><div class="wrap ab"><div class="abv">👩‍⚕️<b><em>25+</em>Years of Care</b></div><div><span class="lab">About Lokarakshaka Hospital</span><h2>Get Best &amp; Amazing Experience With Our Professional Doctors</h2><p class="sub" style="margin-bottom:16px">Lokarakshaka means 'Protector of the People'. We grew from a modest clinic into a full-service multi-speciality hospital serving over one lakh patients, where cutting-edge technology meets genuine human care.</p><a class="btn" href="#about">Learn More</a></div></div></section>
+<div class="fac"><div class="wrap"><h3>Facilities</h3><span><i>🚑</i>24/7 Emergency</span><span><i>💊</i>24/7 Pharmacy</span><span><i>👨‍⚕️</i>24/7 Doctor's Help</span><span><i>🅿</i>24/7 Parking</span><a class="btn w" href="#about">View All</a></div></div>
+<section><div class="wrap grid"><div class="card"><div class="ico">👁</div><h3>Our Vision</h3><p>To be the most trusted healthcare institution in the region, delivering world-class care with compassion, integrity and innovation.</p></div><div class="card"><div class="ico">🎯</div><h3>Our Mission</h3><p>To provide accessible, affordable and ethical healthcare through skilled professionals, modern technology and a patient-first approach.</p></div></div></section>
+<section class="alt"><div class="wrap"><span class="lab">What We Do</span><h2>We Offer Different Services To Improve Your Health</h2><p class="sub"></p><div class="grid" id="svc6"></div><p class="center" style="margin-top:28px"><a class="btn" href="#services">View All</a></p></div></section>
+<section><div class="wrap"><span class="lab">Meet Our Team</span><h2>Qualified &amp; Experienced Doctors</h2><p class="sub"></p><div class="grid" id="team"></div><p class="center" style="margin-top:28px"><a class="btn" href="#doctors">View All</a></p></div></section>
+<section class="cnt"><div class="wrap"><span class="lab" style="color:#e6d3f2">Provide The Best Departments</span><h2>We Are Top Medical &amp; Health With 25 Years Of Experience</h2><div class="grid"><div><b data-n="100" data-s="K+">0</b>Happy Patients</div><div><b data-n="14" data-s="+">0</b>Health Departments</div><div><b data-n="50" data-s="+">0</b>Experienced Doctors</div><div><b data-n="200" data-s="+">0</b>Staff</div></div></div></section>
+<section><div class="wrap"><span class="lab">Know Lokarakshaka</span><h2>Virtual Tour</h2><p class="sub">Replace this block with your hospital video or photo.</p><div class="tour">▶</div></div></section>
+<section class="alt"><div class="wrap"><span class="lab">Trending Now</span><h2>Latest News &amp; Events</h2><p class="sub"></p><div class="grid" id="news"></div></div></section>
+<section><div class="wrap apt"><div class="card"><span class="lab">Need A Doctor For Check-Up?</span><h2>Just Make An Appointment</h2><p>Get the right care — book with your doctors! Call: 085475 55334</p><br><a class="btn" href="#contact">Contact Us</a></div><div class="card em"><h3>Emergency call</h3><p style="font-size:1.8rem;font-weight:700">085475 55334</p><p>Available 24/7</p></div></div></section>
+</div>
+<div class="page" id="p-about">
+<div class="page-hero"><div class="wrap"><h1>About Us</h1><p>Protector of the People — our story, our people and our standards.</p></div></div>
+<section><div class="wrap two"><div><h2>Our Story</h2><p>Lokarakshaka Hospital was founded with a single, clear purpose: to bring world-class medical care closer to the communities that need it most. What began as a modest clinic has grown into a full-service multi-speciality hospital, serving over one lakh patients across 25 years.</p><br><p>Our name — Lokarakshaka, meaning 'Protector of the People' — reflects the promise we made at the very beginning. Every decision we take is guided by that promise.</p><br><p><b>Established:</b> 2000 (placeholder — edit)</p></div>
+<div class="card"><h3>Management</h3><div class="list"><p><b>Name Placeholder</b>Chairman</p><p><b>Name Placeholder</b>Managing Director</p><p><b>Name Placeholder</b>Medical Superintendent</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Nursing School</h2><p class="sub">Training compassionate, skilled nurses. (All details below are placeholders — edit with real information.)</p><div class="grid"><div class="card"><h3>Courses</h3><p>GNM / B.Sc Nursing</p></div><div class="card"><h3>Duration</h3><p>3 to 4 years</p></div><div class="card"><h3>Affiliation</h3><p>Approved by the Nursing Council</p></div><div class="card"><h3>Admissions</h3><p>Call 085475 55334</p></div></div></div></section>
+<section><div class="wrap"><h2>Our Patient Care Philosophy</h2><p class="sub">Four pillars shape every interaction.</p><div class="grid"><div class="card"><h3>Compassion First</h3><p>We treat every patient as a person, not a case number.</p></div><div class="card"><h3>Clinical Excellence</h3><p>Evidence-based, outcome-focused care.</p></div><div class="card"><h3>Transparency &amp; Trust</h3><p>Clear communication on diagnoses, options and costs.</p></div><div class="card"><h3>Continuous Improvement</h3><p>Investing in our people, technology and processes.</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Our Infrastructure</h2><p class="sub">Modern facilities for accurate diagnosis, safe surgery and comfortable recovery.</p><div class="grid">
+<div class="card"><div class="ico">🏥</div><h3>Modular Operation Theatres</h3><p>Laminar airflow, advanced anaesthesia and strict infection control.</p></div>
+<div class="card"><div class="ico">🩻</div><h3>Imaging &amp; Radiology</h3><p>X-ray, ultrasound, CT and MRI with rapid reporting.</p></div>
+<div class="card"><div class="ico">💓</div><h3>Intensive Care Unit</h3><p>24/7 intensivist cover, ventilators and monitoring.</p></div>
+<div class="card"><div class="ico">🧪</div><h3>In-House Laboratory</h3><p>Same-day results for most tests.</p></div>
+<div class="card"><div class="ico">💊</div><h3>24-Hour Pharmacy</h3><p>All prescribed medicines on-site, round the clock.</p></div>
+<div class="card"><div class="ico">🚑</div><h3>Emergency &amp; Trauma Bay</h3><p>Rapid-response team and 24/7 ambulance.</p></div>
+<div class="card"><div class="ico">🦿</div><h3>Physiotherapy</h3><p>Post-surgical, neuro and musculoskeletal rehab.</p></div>
+<div class="card"><div class="ico">🛏</div><h3>Patient Wards</h3><p>Hygienic wards and private rooms for recovery.</p></div></div></div></section>
+<section><div class="wrap"><h2>Accreditations &amp; Recognitions</h2><div class="grid" style="margin-top:24px"><div class="card"><h3>NABH Accredited</h3><p>A mark of quality, safety and patient-centred care.</p></div><div class="card"><h3>ISO 9001:2015 Certified</h3><p>Quality management across clinical and administrative processes.</p></div><div class="card"><h3>State Health Authority Recognised</h3><p>Empanelled under state health schemes.</p></div><div class="card"><h3>Ayushman Bharat Empanelled</h3><p>Cashless treatment for eligible beneficiaries.</p></div></div></div></section>
+</div>
+<div class="page" id="p-services">
+<div class="page-hero"><div class="wrap"><h1>Medical Specialities</h1><p>Expert consultants across 14 departments, all under one roof.</p></div></div><section class="alt"><div class="wrap" id="services"></div></section>
+</div>
+<div class="page" id="p-doctors">
+<div class="page-hero"><div class="wrap"><h1>Our Doctors &amp; Specialists</h1><p>Meet the experienced team of specialists at Lokarakshaka Hospital. Click a doctor to see details.</p></div></div><section><div class="wrap" id="docs"></div></section><section class="cta"><div class="wrap"><h2>Not sure which specialist to see?</h2><p class="sub">Book a general consultation and we'll guide you.</p><a class="btn w" href="#contact">Book a Consultation</a></div></section>
+</div>
+<div class="page" id="p-doctor">
+<section><div class="wrap" id="doc"></div></section>
+</div>
+<div class="page" id="p-contact">
+<div class="page-hero"><div class="wrap"><h1>Contact Us</h1><p>Reach out for appointments, enquiries or emergency assistance — available around the clock.</p></div></div>
+<section><div class="wrap two"><div><div class="emg"><h3>🚨 Emergency Helpline — 085475 55334</h3><p>Available 24/7. For life-threatening emergencies, call immediately. Ambulance: 085475 55334</p></div>
+<div class="card list"><h3>Get in Touch</h3><p><b>Phone</b><a href="tel:+918547555334">085475 55334</a></p><p><b>Email</b><a href="mailto:lokaraksha15@gmail.com">lokaraksha15@gmail.com</a></p><p><b>WhatsApp</b><a href="https://wa.me/918547555334" target="_blank">085475 55334</a></p><p><b>OPD</b>Mon – Sat: 9:00 AM – 6:00 PM</p><p><b>Emergency / Pharmacy</b>24 x 7</p><p><b>Laboratory</b>Mon – Sat: 7:00 AM – 8:00 PM</p></div></div>
+<div><h2>Find Us</h2><p class="sub">Arinalloor, Thevalakkara, Kollam, Kerala – 690524</p><iframe loading="lazy" src="https://maps.google.com/maps?q=Arinalloor+Thevalakkara+Kollam+Kerala&output=embed"></iframe><br><br><a class="btn" href="https://maps.app.goo.gl/m2hKwwjsSeLXH1Sg7" target="_blank">Get Directions</a></div></div></section>
+<section class="alt"><div class="wrap two"><div class="grid" style="grid-template-columns:1fr"><div class="card"><h3>By Road</h3><p>Easily accessible from the main Kollam–Thevalakkara road. Ample parking on-site.</p></div><div class="card"><h3>By Bus</h3><p>Buses to Thevalakkara stop near the hospital.</p></div><div class="card"><h3>By Auto / Cab</h3><p>Ask for Lokarakshaka Hospital, Thevalakkara.</p></div></div>
+<div><h2>Send Us a Message</h2><p class="sub">We reply within one working day.</p><form id="cf"><input name="n" placeholder="Full Name *" required><input name="e" type="email" placeholder="Email Address *" required><input name="p" placeholder="Phone Number"><input name="s" placeholder="Subject"><textarea name="m" rows="5" placeholder="Message *" required></textarea><button class="btn" type="submit">Send Message</button></form></div></div></section>
+</div>
+<div id="ft"></div><script>// ===== EDIT YOUR CONTENT HERE =====
+const H={name:"Lokarakshaka Hospital",phone:"085475 55334",tel:"+918547555334",wa:"918547555334",email:"lokaraksha15@gmail.com",
+addr:"Arinalloor, Thevalakkara, Kollam, India – 690524",dir:"https://maps.app.goo.gl/m2hKwwjsSeLXH1Sg7"};
+// [name, description, [conditions]]
+const S=[
+["Emergency Care","Round-the-clock emergency services with a dedicated trauma team, resuscitation bay, and rapid-response protocols to handle all life-threatening conditions.",["Trauma & Accidents","Cardiac Emergencies","Stroke","Severe Infections","Respiratory Distress","Poisoning & Overdose"]],
+["General Medicine","Comprehensive diagnosis and management of a wide range of acute and chronic illnesses in adults.",["Fever & Infections","Diabetes Management","Hypertension","Thyroid Disorders","Anaemia","Lifestyle Diseases"]],
+["General Surgery","Expert surgical care for a broad spectrum of conditions, with a focus on minimally invasive techniques for faster recovery and better outcomes.",["Appendicitis","Hernia Repair","Gallbladder Surgery","Abdominal Surgery","Wound Care","Laparoscopic Procedures"]],
+["Paediatrics","Dedicated care for infants, children, and adolescents — from routine check-ups and vaccinations to the management of complex childhood illnesses.",["Newborn Care","Vaccinations","Childhood Infections","Growth & Development","Asthma in Children","Nutritional Disorders"]],
+["ENT (Ear, Nose & Throat)","Specialised diagnosis and treatment of disorders affecting the ear, nose, throat, head, and neck — both medical and surgical.",["Hearing Loss","Sinusitis","Tonsillitis","Nasal Polyps","Vertigo","Voice & Throat Disorders"]],
+["Gynaecology & Obstetrics","Comprehensive women's health services covering routine gynaecological care, high-risk pregnancies, and advanced surgical procedures.",["Antenatal & Postnatal Care","High-Risk Pregnancy","PCOS","Fibroids & Cysts","Menstrual Disorders","Laparoscopic Gynaecology"]],
+["Neurology","Advanced diagnosis and treatment of disorders of the brain, spinal cord, and nervous system, with access to modern neuroimaging and neuro-intervention.",["Stroke & TIA","Epilepsy","Migraine","Parkinson's Disease","Multiple Sclerosis","Neuropathy"]],
+["Nephrology","Expert care for kidney diseases and disorders, including dialysis services and management of chronic kidney disease.",["Chronic Kidney Disease","Dialysis","Kidney Infections","Nephrotic Syndrome","Hypertensive Nephropathy","Electrolyte Disorders"]],
+["Orthopaedics","Comprehensive bone, joint, and musculoskeletal care — from fracture management and sports injuries to joint replacement surgery.",["Fractures & Dislocations","Joint Replacement","Sports Injuries","Spine Disorders","Arthritis","Ligament & Tendon Repair"]],
+["Dentistry","Full-spectrum dental care for all ages, from preventive dentistry and cosmetic procedures to complex oral surgery.",["Dental Fillings & Extractions","Root Canal Treatment","Orthodontics","Dental Implants","Gum Disease","Cosmetic Dentistry"]],
+["Gastroenterology","Specialised care for disorders of the digestive system, including endoscopic procedures for diagnosis and treatment.",["GERD & Acidity","Irritable Bowel Syndrome","Liver Disease","Colonoscopy & Endoscopy","Inflammatory Bowel Disease","Pancreatitis"]],
+["Pulmonology","Expert diagnosis and management of respiratory and lung conditions, with pulmonary function testing and bronchoscopy services.",["Asthma","COPD","Pneumonia","Tuberculosis","Sleep Apnoea","Interstitial Lung Disease"]],
+["Urology","Comprehensive urological care for men and women, covering medical and surgical management of urinary tract and reproductive organ conditions.",["Kidney Stones","Urinary Tract Infections","Prostate Disorders","Bladder Issues","Male Infertility","Laparoscopic Urology"]],
+["Dermatology","Diagnosis and treatment of skin, hair, and nail conditions — from common skin infections to chronic dermatological disorders.",["Acne & Pigmentation","Eczema & Psoriasis","Hair Loss","Skin Infections","Allergy & Urticaria","Cosmetic Dermatology"]]];
+// [service index, designation, qualifications]
+const D=[[1,"Senior Consultant","MBBS, MD (Internal Medicine)"],[1,"Consultant Physician","MBBS, MD (General Medicine)"],
+[0,"Head of Emergency Medicine","MBBS, MD (Emergency Medicine)"],[0,"Emergency Medicine Specialist","MBBS, DNB (Emergency Medicine)"],
+[12,"Senior Urologist","MBBS, MS (Surgery), MCh (Urology)"],[12,"Consultant Urologist","MBBS, DNB (Urology)"],
+[5,"Senior Gynaecologist & Obstetrician","MBBS, MS (Obstetrics & Gynaecology)"],[5,"Consultant Gynaecologist","MBBS, DGO, DNB (OBG)"],
+[6,"Senior Neurologist","MBBS, MD (Medicine), DM (Neurology)"],[6,"Consultant Neurologist","MBBS, DNB (Neurology)"],
+[8,"Senior Orthopaedic Surgeon","MBBS, MS (Orthopaedics)"],[8,"Consultant Orthopaedic Surgeon","MBBS, DNB (Orthopaedics)"],
+[7,"Senior Nephrologist","MBBS, MD (Medicine), DM (Nephrology)"],[11,"Senior Pulmonologist","MBBS, MD (Pulmonary Medicine)"],
+[9,"Senior Dental Surgeon","BDS, MDS (Oral & Maxillofacial Surgery)"],[9,"Consultant Dentist","BDS, MDS (Prosthodontics)"],
+[2,"Senior General Surgeon","MBBS, MS (General Surgery)"],[2,"Consultant Surgeon","MBBS, DNB (General Surgery)"]];
+const NAME="Dr. Placeholder Name";
+const NEWS=[["15 Nov 2026","Free Diabetes & BP Screening Camp","Join our community health camp with free screening and expert consultation."],
+["28 Nov 2026","World Pneumonia Awareness Talk","Our pulmonology team shares tips on prevention and early care."],
+["10 Dec 2026","Nursing School Admissions Open","Applications are now open for the new academic batch."],
+["20 Dec 2026","Annual Blood Donation Drive","Donate blood and save lives. Refreshments for all donors."]];
+const IC=["🚑","🩺","🔪","🧸","👂","🤰","🧠","💧","🦴","🦷","🍽","🫁","🚻","✨"];
+</script><script>const $=s=>document.querySelector(s),slug=s=>s.toLowerCase().replace(/[^a-z]+/g,'-'),
+WA=`https://wa.me/${H.wa}?text=Hello, I would like to book an appointment`,
+pg=location.pathname.split('/').pop()||'#index',
+N=[["#index","Home"],["#about","About"],["#services","Services"],["#doctors","Doctors"],["#contact","Contact"]];
+$('#hd').innerHTML=`<div class="top"><div class="wrap"><span>📞 ${H.phone} &nbsp;|&nbsp; ✉ ${H.email}</span><a href="${WA}" target="_blank">Online Booking</a></div></div><header><div class="wrap nav"><a class="logo" href="#index">✚ Lokarakshaka <span>Hospital</span></a>
+<button class="burger" onclick="$('nav').classList.toggle('open')">☰</button><nav>${N.map(n=>`<a href="${n[0]}" class="${pg==n[0]||(pg=='#doctor'&&n[0]=='#doctors')?'on':''}">${n[1]}</a>`).join('')}<a class="btn" style="color:#fff;margin-left:22px;border-radius:30px;padding:8px 20px" href="${WA}" target="_blank">Book Appointment</a></nav></div></header>`;
+$('#ft').innerHTML=`<footer><div class="wrap grid"><div><h4>Lokarakshaka Hospital</h4><p>Protector of the People. Multi-speciality care you can trust.</p></div>
+<div><h4>Quick Links</h4>${N.map(n=>`<a href="${n[0]}">${n[1]}</a>`).join('')}</div>
+<div><h4>Departments</h4>${S.slice(0,8).map(s=>`<a href="#services">${s[0]}</a>`).join('')}</div><div><h4>Contact</h4><a href="tel:${H.tel}">📞 ${H.phone}</a><a href="mailto:${H.email}">✉ ${H.email}</a><p>📍 ${H.addr}</p></div></div>
+<div class="copy">© ${new Date().getFullYear()} Lokarakshaka Hospital. All rights reserved.</div></footer><a class="wa" href="${WA}" target="_blank">💬 WhatsApp</a>`;
+const btn=(t,h,c='')=>`<a class="btn ${c}" href="${h}" target="${h.startsWith('http')?'_blank':'_self'}">${t}</a>`;
+if($('#news'))$('#news').innerHTML=NEWS.map(n=>`<div class="card"><span class="date">${n[0]}</span><h3>${n[1]}</h3><p>${n[2]}</p></div>`).join('');
+if($('#services'))$('#services').innerHTML=S.map((s,i)=>`<div class="dept" id="${slug(s[0])}"><div class="di">${IC[i]}</div><h3>${s[0]}</h3><p style="color:var(--m)">${s[1]}</p><h4>CONDITIONS & PROCEDURES</h4><div class="chips">${s[2].map(c=>`<span>${c}</span>`).join('')}</div>${btn('Book Appointment',WA)}${btn('Our Doctors','#doctors','o')}</div>`).join('');
+const card=(d,i)=>`<a class="card doc" href="#doctor-${i}"><div class="av">${NAME[4]}</div><h3>${NAME}</h3><small>${d[1]}</small><small>${d[2]}</small><div class="tag">View profile →</div></a>`;
+if($('#docs'))$('#docs').innerHTML=S.map((s,si)=>{const l=D.map((d,i)=>[d,i]).filter(x=>x[0][0]==si);return l.length?`<h3 class="dh" id="${slug(s[0])}">${s[0]}</h3><div class="grid">${l.map(x=>card(x[0],x[1])).join('')}</div>`:''}).join('');
+const RD=()=>{if($('#doc')){const i=+(location.hash.split('-')[1])||0,d=D[i]||D[0],s=S[d[0]];
+$('#doc').innerHTML=`<div class="two"><div class="card doc"><div class="av big">${NAME[4]}</div><h3>${NAME}</h3><small>${d[1]}</small><div class="tag">${s[0]}</div><br>${btn('Book Appointment',WA)}</div>
+<div class="list"><h2>About the Doctor</h2><p><b>Department</b>${s[0]}</p><p><b>Qualifications</b>${d[2]}</p><p><b>Experience</b>10+ years (placeholder)</p><p><b>Languages</b>English, Malayalam</p><p><b>OPD Timings</b>Mon – Sat: 9:00 AM – 1:00 PM (placeholder)</p><p><b>Profile</b>Doctor biography goes here. Replace with real details.</p><br>${btn('← All Doctors','#doctors','o')}</div></div>`;}};RD();
+if($('#cf'))$('#cf').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+location.href=`mailto:${H.email}?subject=${encodeURIComponent(f.get('s')||'Website enquiry')}&body=${encodeURIComponent(`Name: ${f.get('n')}\nPhone: ${f.get('p')}\nEmail: ${f.get('e')}\n\n${f.get('m')}`)}`};
+if('IntersectionObserver' in window){const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1});document.querySelectorAll('.card,.dept,.gl').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+if($('#svc6'))$('#svc6').innerHTML=S.slice(0,6).map((s,i)=>`<a class="card svc" href="#services"><div class="ico">${IC[i]}</div><h3>${s[0]}</h3><p>${s[1].slice(0,105)}…</p><b style="color:var(--p)">Read more →</b></a>`).join('');
+if($('#team'))$('#team').innerHTML=[0,2,4,6].map(i=>card(D[i],i)).join('');
+document.querySelectorAll('[data-n]').forEach(el=>{const n=+el.dataset.n;let c=0;const t=setInterval(()=>{c=Math.min(n,c+Math.ceil(n/40));el.textContent=c+(el.dataset.s||'');if(c>=n)clearInterval(t)},40)});
+
+const sh=()=>{const k=location.hash.slice(1).split('-')[0]||'index';document.querySelectorAll('.page').forEach(p=>p.classList.toggle('show',p.id=='p-'+k));document.querySelectorAll('nav a').forEach(a=>{const x=a.getAttribute('href').slice(1);a.classList.toggle('on',x==k||(k=='doctor'&&x=='doctors'))});$('nav').classList.remove('open')};sh();addEventListener('hashchange',()=>{RD();sh();scrollTo(0,0)});</script></body></html>
